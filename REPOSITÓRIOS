@@ -1,0 +1,19 @@
+deixe  numLista  =  janela . prompt ( "Digite o tqmanho de lista:" ) // Pedindo o tamanho de lista que será criada.
+	deixe  texto  =  janela . prompt ( "Digite um nome:" ) // Pedindo que irá estar dentro da lista.
+	
+
+	deixe  qtd  =  0 ;  // Criando acrescento.
+	function  myFunction ( )  {
+	    qtd ++  // Sempre que a função para chamada, irá acrescentar aqui.
+	
+
+	      criarElemento  =  document . createElement ( "LI" ) ;  // Fazendo a criacao da tag "<li> </li>"
+	     textoLista  =  document . createTextNode ( ` $ { texto }  $ { qtd } º` ) ; // Adicionando o texto digitado pelo o usuario e a numeracao da quantidade da lista ao lado do texto.
+	    criarElemento . appendChild ( textoLista ) ;
+	    documento . getElementById ( "myList" ) . appendChild ( criarElemento ) ; // Informando o local que irá ficar a lista.
+	} ;
+	
+
+	para  ( deixe  i  =  0 ;  i  <  numLista ;  i ++ ) {
+	    myFunction ( ) ;
+	} ;
