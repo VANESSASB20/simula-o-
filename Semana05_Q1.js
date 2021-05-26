@@ -1,2 +1,0 @@
-# simula-o-
-Peso/altura 
